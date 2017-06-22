@@ -55,7 +55,7 @@ img {
   font-family: 'zocial', sans-serif;
 }
 body {
-  font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Great Vibes';
   font-size-adjust: auto;
   text-rendering: optimizeLegibility;
   font-weight: normal;
@@ -469,7 +469,7 @@ li li {
   }
 }
 
-/* dirty little helpers */
+
 .showit {
   display: block;
 }
