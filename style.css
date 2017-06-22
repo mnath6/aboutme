@@ -1,26 +1,7 @@
-/*
-*
-*  ■ imports
-*  ■ the very basics
-*  ■ WordPress basics
-*  ■ typography
-*  ■ links
-*  ■ colors, borders, backgrounds
-*  ■ layout
-*    ■ header
-*    ■ nav
-*    ■ content
-*    ■ footer
-*  ■ responsiveness
-*  ■ dirty little helpers
-*
-*/
 
-/* imports */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Source+Code+Pro|Bitter:700);
 @import url(http://weloveiconfonts.com/api/?family=entypo|zocial);
 
-/* the very basics */
+/* basics */
 body { margin: 0; }
 em { font-style: italic }
 strong { font-weight: 700 }
@@ -382,7 +363,7 @@ li li {
     padding: 0.75em 1.5em;
   }
   header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/770/192/nature/2/') center center no-repeat;
+    background: rgba(0, 0, 0, 0.1) url('https://s-media-cache-ak0.pinimg.com/originals/2c/f1/83/2cf18345901cdbfe7c0700142c4f66ce.jpg') center center no-repeat;
     background-size: cover;
   }
   h1 {
@@ -415,7 +396,7 @@ li li {
     padding: 0.5em 1em;
   }
   header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/480/120/nature/1/') center center no-repeat;
+    background: rgba(0, 0, 0, 0.1) url('https://s-media-cache-ak0.pinimg.com/originals/2c/f1/83/2cf18345901cdbfe7c0700142c4f66ce.jpg/') center center no-repeat;
     background-size: cover;
 }
   h1 {
