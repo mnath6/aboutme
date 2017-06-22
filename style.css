@@ -74,7 +74,7 @@ blockquote {
   font-style: italic;
 }
 code, pre {
-  font-family: 'Source Code Pro', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-family: 'Great Vibes', monospace;
 }
 code, pre {
   font-size: 1.2em;
@@ -100,8 +100,8 @@ footer p {
   text-align: center;
 }
 .social li {
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 4em;
+  line-height: 4em;
 }
 
 /* links */
@@ -131,7 +131,7 @@ a:hover, a:active {
 
 /* colors, borders, backgrounds */
 body {
-  background: #fff;
+  background: #F5F5DC;
 }
 header {
   color: #555;
@@ -324,7 +324,7 @@ li li {
 /* responsiveness */
 @media (min-width: 100em) {
   header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1600/400/nature/5/') center center no-repeat;
+    background: rgba(0, 0, 0, 0.1) url('https://s-media-cache-ak0.pinimg.com/originals/2c/f1/83/2cf18345901cdbfe7c0700142c4f66ce.jpg') center center no-repeat;
     background-size: cover;
   }
 }
@@ -333,7 +333,7 @@ li li {
     font-size: 16px;
   }
   header {
-    background: rgba(0, 0, 0, 0.1) url('http://lorempixel.com/g/1200/300/nature/4/') center center no-repeat;
+    background: rgba(0, 0, 0, 0.1) url('https://s-media-cache-ak0.pinimg.com/originals/2c/f1/83/2cf18345901cdbfe7c0700142c4f66ce.jpg/') center center no-repeat;
     background-size: cover;
   }
   code {
