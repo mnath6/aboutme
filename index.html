@@ -1,127 +1,21 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="shortcut icon" href="glasses.jpg" type="image/png">
-    	<link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="stuff.js"></script>
+    <!-- This stylesheet contains specific styles for displaying the map
+         on this page. Replace it with your own styles as described in the
+         documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial -->
+    <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
   </head>
   <body>
-  <header>
-    <h1>Mirna Nath<br/><small>&mdash; <em>about me</em> &mdash;</small></h1>
-  </header>
-  <nav>
-    <button class="nav-trigger">
-      <span class="entypo-menu"></span>
-    </button>
-    <button class="nav-close">
-      <span class="entypo-cancel"></span>
-    </button>
-    <ul class="main-nav">
-      <li><a href="https://mnath6.github.io/Wine-Guide/" class="current">My Wine Site</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var chicago = {lat: 41.85, lng: -87.65};
+        var indianapolis = {lat: 39.79, lng: -86.14};
 
-<div class="wrapper">
-  
-  <section class="content">
-    <article>
-      <h2>The Early Years</h2>
-      
-      <blockquote>
-        It all began in Chicago, Illinois on a crisp October morning...
-      </blockquote>
-
-      <p> I was the first born to wonderful parents who had prayed deeply for a beautiful little girl like myself. Joyful and cheery were my early years, however they were too cold so we soon moved to Marietta, Georgia. Suburbia proved to be the perfect place to raise a family. </p>
-    
-        
-
-	    <p>In suburbia, I had many safe activities to partake in during my adolescence</p>
-      <ul>
-        <li>Choir
-          <ul>
-            <li>Weekly Frozen Yogurt Trips</li>
-          </ul>
-        </li>
-        <li>Walks at the Park
-          <ul>
-            <li>Shopping at outdoor Malls
-          <ul>
-        <li>And of course, school clubs</li>
-      
-      <h3>The College Years</h3>
-      
-      <img src="atl.jpg" alt="example fullwidth article image"/>
-      
-      <p>Suddenly it was time for college. Which meant living my comfy suburb for the<strong>city</strong>. Well, what I thought would be the city
-	It turned out, Georgia Tech was in its own bubble in midtown! I'm not actually done with college yet, but I'm getting there!</p>
-      
-      <blockquote>
-        But what about my hobbies?
-      </blockquote>
-      
-      <p>I love to sing. I've been in choir my whole life. Yes, even in infancy. I got my scuba diving license before my drivers' license,
-	though the latter was quite the struggle...basically I'm much better in the water than on land. Kayaking and swimming keep me going     </p>
-      
-      <h4>My future</h4>
-      
-      <img class="alignleft" src="http://lorempixel.com/250/180/food/7" alt="example left-aligned article image"/>
-      
-      <p>I hope to live by a large body of water someday. Overlooking one would be fantastic. 
-	 I don't discriminate - ocean, lake, pond , river..all are wonderful. Will I choose the suburban life? Who knows.</p>
-      
-
-      <img class="alignright" src="http://lorempixel.com/250/300/food/4" alt="example right-aligned article image"/>
-      
-      <p>Viennese bar, variety fair trade medium est café au lait, mocha lungo shop in lungo, saucer siphon, americano robust rich siphon extraction. Variety, latte café au lait, roast affogato, fair trade aromatic mocha affogato dripper wings java viennese, est white, dark instant aged grounds sugar. Cup, wings, sugar shop plunger pot macchiato shop, caramelization seasonal latte extraction espresso coffee black spoon instant robust percolator dripper, at roast saucer organic con panna. Robusta café au lait bar cinnamon, qui aftertaste kopi-luwak carajillo cup milk cortado french press organic sugar so roast medium mazagran aged french press wings. Ristretto, qui americano, mocha, saucer strong fair trade lungo froth plunger pot fair trade decaffeinated est cup robust wings turkish.</p>
-    
-    </article>
-    
-    
-    <section class="recommend">
-      <h3>Links to things I like</h3>
-      <ul>
-        <li><a href="#">The Ocean</a></li>
-        <li><a href="#">Mountains</a></li>
-        <li><a href="#">Kate Spade New York</a></li>
-      </ul>
-    </section>
-    
-  </section> <!-- .content -->
-  
-</div> <!-- .wrapper -->
-
-<footer class="page-footer">
-  
-  <!-- <section class="social">
-    <ul>
-      <li><a href="#"><span class="zocial-twitter"></span></a></li>
-      <li><a href="#"><span class="entypo-github"></span></a></li>
-      <li><a href="#"><span class="zocial-dribbble"></span></a></li>
-      <li><a href="#"><span class="zocial-flickr"></span></a></li>
-      <li><a href="#"><span class="zocial-forrst"></span></a></li>
-      <li><a href="#"><span class="zocial-wordpress"></span></a></li>
-      <li><a href="#"><span class="zocial-klout"></span></a></li>
-      <li><a href="#"><span class="zocial-soundcloud"></span></a></li>
-      <li><a href="#"><span class="zocial-spotify"></span></a></li>
-      <li><a href="#"><span class="zocial-googleplus"></span></a></li>
-      <li><a href="#"><span class="zocial-facebook"></span></a></li>
-      <li><a href="#"><span class="zocial-lastfm"></span></a></li>
-      <li><a href="#"><span class="zocial-tumblr"></span></a></li>
-      <li><a href="#"><span class="zocial-disqus"></span></a></li>
-      <li><a href="#"><span class="zocial-linkedin"></span></a></li>
-      <li><a href="#"><span class="zocial-xing"></span></a></li>
-      <li><a href="#"><span class="zocial-vimeo"></span></a></li>
-      <li><a href="#"><span class="zocial-youtube"></span></a></li>
-    </ul>
-  </section> -->
- 
-  
-  <p><span class="zocial-creativecommons"></span> 2017 Mirna Nath &mdash; Aspiring Employee &mdash; </p>
-  
-</footer>
-</body>
-</html>
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: chicago,
+          scrollwheel: false,
+          zoom: 7
+        });
