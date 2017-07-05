@@ -12,20 +12,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  .jumbotron {
+    background-image: url("roses.jpg");
   .nav navbar-nav{
     background-image: url("roses.jpg");
     font-size: 30px;
   }
   h1 {
-    font family: 'Dancing Script'; font-size: 50px;
+    font-family: 'Dancing Script'; font-size: 50px;
   }
-
+  p {
+    font-family: 'Cardo';font-size: 30px;
           
   body {
       position: relative; 
       font-family: 'Cardo';font-size: 30px;
   }
-  .mySlides {display:none;}
+
   #section1 {padding-top:50px;height:500px;color:black; background-color: #FFE2E6;}
   #section2 {padding-top:50px;height:500px;color:black; background-color: #FFDAE0;}
   #section3 {padding-top:50px;height:500px;color:black; background-color: #FFD3DA;}
@@ -34,7 +37,10 @@
   </style>
 </head>
 <body>
-
+<div class="jumbotron">
+  <h1>Welcome!</h1>      
+  <p>My name is Mirna Nath</p>
+</div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -64,21 +70,48 @@
 </nav>    
 
 <div id="section1" class="container-fluid">
-  <h1>Education1</h1>
+  <h1>Education</h1>
   <p>I am a Junior at The Georgia Institute of Technology. I will be graduating in May 2019 with a major in Industrial and Systems Engineering
     with a focus in Operations Research. I also will receive a certificate in IT Management. </p>
-  <img src="tech.jpg" alt="tech" aling="middle">
+  <img src="tech.jpg" alt="tech" class="img-responsive center-block">
 </div>
 <div id="section2" class="container-fluid">
  <h1>Places I've Been</h1>
   <p>I love exploring our beautiful world! Check out this slideshow! </p>
-  <img class="mySlides" src="img_fjords.jpg" style="width:100%">
-  <img class="mySlides" src="img_lights.jpg" style="width:100%">
-  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
 </div>
 <div id="section3" class="container-fluid">
   <h1>Hobbies</h1>
@@ -119,23 +152,6 @@ $(document).ready(function(){
     }  // End if
   });
 });
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
 </script>
 
 </body>
