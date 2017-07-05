@@ -29,14 +29,32 @@
   body {
       position: relative; 
       font-family: 'Cardo';font-size: 30px;
-      background image: url("back.jpg");
   }
 
-  #section1 {padding-top:50px;height:500px;color:black; background-color: #FFE2E6;}
-  #section2 {padding-top:50px;height:500px;color:black; background-color: #FFDAE0;}
-  #section3 {padding-top:50px;height:500px;color:black; background-color: #FFD3DA;}
-  #section41 {padding-top:50px;height:500px;color:black; background-color: #FFCCD4;}
-  #section42 {padding-top:50px;height:300px;color:black; background-color:#FFC5CD;}
+  #section1 {
+    padding-top:50px;height:500px;color:black; background-color: #FFE2E6;
+  }
+  #section2 {
+    padding-top:50px;height:500px;color:black; background-color: #FFDAE0;
+  }
+  #section3 {
+    padding-top:50px;height:500px;color:black; background-color: #FFD3DA;
+  }
+  #section41 {
+    padding-top:50px;height:500px;color:black; background-color: #FFCCD4;
+  }
+  #section42 {
+    padding-top:50px;height:300px;color:black; background-color:#FFC5CD;
+  }
+  .custom-bullet li {
+    display: block;
+}
+
+.custom-bullet li:before {
+    
+   <span class="glyphicons glyphicons-book"></span>
+}
+
   </style>
 </head>
 <body>
@@ -139,7 +157,12 @@
 </div>
 <div id="section3" class="container-fluid">
   <h1>Hobbies</h1>
-  <p>Apart from traveling, I also enjoy singing and scuba diving!</p>
+  <p>Apart from traveling, I also enjoy reading! Here are some of my favorite books:</p>
+  <ul class="custom-bullet">
+    <li><i>North of Beautiful</i> by Justina Chen</li>
+    <li><i>Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are</i> by Seth Stephens-Davidowitz</li>
+    <li><i>Beautiful Ruins</i>by Jess Walters</li>
+  </ul>
 </div>
 <div id="section41" class="container-fluid">
    <h1>~*App in Progress*~</h1>
