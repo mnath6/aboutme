@@ -226,10 +226,8 @@ body{
 <a href="https://mnath6.github.io/Wine-Guide/">Click here to access my wine guide!</a>
 </div>
 <script>
-
-  
 $(document).ready(function(){
-
+  // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
@@ -241,6 +239,9 @@ $(document).ready(function(){
 
       // Store hash
       var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
@@ -310,8 +311,7 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 }
 
 setInterval(updateGradient,10);
-  }
- }
+  });
 });
 </script>
 
